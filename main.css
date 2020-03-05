@@ -1,0 +1,32 @@
+    /*========================================================  
+        CDN for font fmaily used on HotSpring.com
+        ==========================================================*/
+
+        @import url("https://use.typekit.net/icn5gcn.css");
+
+        /*========================================================  
+            only for demo use positioning
+            ==========================================================*/
+    
+        .container {
+    
+          position: relative;
+          display: flex;
+          justify-content: space-evenly;
+          top: 15vh;
+          margin: 5vh;
+          font-weight: 400;
+        }
+    
+        h1 {
+          font-weight: 300;
+          text-align: center;
+        }
+    
+        P {
+          position: relative;
+          width: 500px;
+          margin: auto;
+          text-align: center;
+          top: 15vh;
+        }
