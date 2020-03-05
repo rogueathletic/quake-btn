@@ -159,21 +159,22 @@
         display: block;
       }
 
-      .quake-btn3>.elementor-button:hover::after,
+      .quake-btn3 .elementor-button:hover::after,
       .quake-btn4 .elementor-button:hover::after {
         display: block;
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media  (max-width: 1024px) {
 
-      .quake-btn .elementor-button:hover,
-      .quake-btn2 .elementor-button:hover,
-      .quake-btn3 .elementor-button:hover,
-      .quake-btn4 .elementor-button:hover .quake-btn .elementor-button:active,
-      .quake-btn2 .elementor-button:active,
-      .quake-btn3 .elementor-button:active,
-      .quake-btn4 .elementor-button:active {
+      .quake-btn .elementor-button:hover::after,
+      .quake-btn2 .elementor-button:hover::after,
+      .quake-btn3 .elementor-button:hover::after,
+      .quake-btn4 .elementor-button:hover::after,
+       .quake-btn .elementor-button:active::after,
+      .quake-btn2 .elementor-button:active::after,
+      .quake-btn3 .elementor-button:active::after,
+      .quake-btn4 .elementor-button:active::after {
         display: block;
       }
     }
@@ -237,9 +238,7 @@
       }
     }
 
-    @media only screen and (max-width: 1024px) {
-
-
+    @media (max-width: 1024px) {
       @-webkit-keyframes quake {
         from {
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
@@ -259,13 +258,12 @@
           -moz-opacity: 0;
           -khtml-opacity: 0;
           opacity: 0;
-          -webkit-transform: scale(2);
-          -ms-transform: scale(2);
-          -o-transform: scale(2);
-          transform: scale(2);
+          -webkit-transform: scale(6);
+          -ms-transform: scale(6);
+          -o-transform: scale(6);
+          transform: scale(6);
         }
       }
-
       @keyframes quake {
         from {
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
@@ -285,10 +283,10 @@
           -moz-opacity: 0;
           -khtml-opacity: 0;
           opacity: 0;
-          -webkit-transform: scale(2);
-          -ms-transform: scale(2);
-          -o-transform: scale(2);
-          transform: scale(2);
+          -webkit-transform: scale(6);
+          -ms-transform: scale(6);
+          -o-transform: scale(6);
+          transform: scale(6);
         }
       }
     }
@@ -304,37 +302,30 @@
   <div class="container">
     <!-- first button to set class at element class container -->
     <div class="quake-btn">
-      <a href="#">
         <button class="elementor-button">
           Click Me
         </button>
-      </a>
     </div>
     <!-- second button to set class at element class container -->
     <div class="quake-btn2">
-      <a href="#"></a>
       <button class="elementor-button">
         Click Me
-      </button></a>
+      </button>
     </div>
   </div>
 
   <div class="container">
     <!-- first button to set class at element class container -->
     <div class="quake-btn3">
-      <a href="#">
         <button class="elementor-button">
           Hover Me
         </button>
-      </a>
     </div>
     <!-- second button to set class at element class container -->
     <div class="quake-btn4">
-      <a href="#">
         <button class="elementor-button">
           Hover Me
         </button>
-      </a>
     </div>
   </div>
 </body>
