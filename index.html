@@ -112,7 +112,11 @@
          .quake-btn .elementor-button:hover,
         .quake-btn2 .elementor-button:hover,
         .quake-btn3 .elementor-button:hover,
-        .quake-btn4 .elementor-button:hover{
+        .quake-btn4 .elementor-button:hover
+         .quake-btn .elementor-button:active,
+        .quake-btn2 .elementor-button:active,
+        .quake-btn3 .elementor-button:active,
+        .quake-btn4 .elementor-button:active {
               -webkit-text-stroke: 0.2px;
         }
         
@@ -149,7 +153,8 @@
             sets the rules for animation to appear when button clicked
         ==========================================================*/
           
-          .quake-btn .elementor-button:active::after,
+@media onll screen and (min-width: 1025px) {
+              .quake-btn .elementor-button:active::after,
          .quake-btn2 .elementor-button:active::after {
                      display: block;
           }
@@ -158,7 +163,20 @@
          .quake-btn4 .elementor-button:hover::after {
                      display: block;
           }
+        }
         
+ @media only screen and (max-width: 1024px) {
+         .quake-btn .elementor-button:hover,
+        .quake-btn2 .elementor-button:hover,
+        .quake-btn3 .elementor-button:hover,
+        .quake-btn4 .elementor-button:hover
+         .quake-btn .elementor-button:active,
+        .quake-btn2 .elementor-button:active,
+        .quake-btn3 .elementor-button:active,
+        .quake-btn4 .elementor-button:active {
+                     display: block;
+          }
+        }
           /*======================================================== 
         Start to finish animation rules
         ==========================================================*/
